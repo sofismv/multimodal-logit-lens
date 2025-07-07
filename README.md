@@ -21,6 +21,7 @@ python -m ipykernel install --user --name llava-lens --display-name "llava-lens"
 ```
 
 ## Project Structure
+```
 ├── src/
 │   ├── llava.py                        # Main script
 │   ├── attention_generate_tokens.ipynb # Analyze attention patterns for "cat" and "dog" tokens
@@ -31,6 +32,7 @@ python -m ipykernel install --user --name llava-lens --display-name "llava-lens"
 ├── report.pdf                          # Full analysis report
 ├── requirements.txt                    # Python dependencies
 └── README.md                           # This file
+```
 
 ## Run scripts
 
