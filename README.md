@@ -21,16 +21,16 @@ python -m ipykernel install --user --name llava-lens --display-name "llava-lens"
 ```
 
 # Project Structure
-├── src/
-│   ├── llava.py                           # Main script
-│   ├── attention_generate_tokens.ipynb    # Attention patterns when generating cat and dog tokens
-│   ├── generate_tokens.ipynb              # Prediction tokens during generation
-│   ├── probability.ipynb                  # Probabilities of "cat" and "dog" tokens
-│   ├── visualize_attention.ipynb          # Attention patterns visualization
-│   └── analysis_results/                  # Generated output files (after script running)
-├── report.pdf                             # Full analysis report
-├── requirements.txt                       # Python dependencies
-└── README.md                             # This file
+├── src/                      
+│   ├── llava.py                      # Main script
+│   ├── attention_generate_tokens.ipynb # Analyze attention patterns when generating "cat" and "dog" tokens
+│   ├── generate_tokens.ipynb         # Predict tokens during generation
+│   ├── probability.ipynb             # Compute probabilities of "cat" and "dog" tokens
+│   ├── visualize_attention.ipynb     # Visualize attention patterns
+│   └── analysis_results/             # Generated output files (after running scripts)
+├── report.pdf                        # Full analysis report
+├── requirements.txt                  # Python dependencies
+└── README.md                         # This file
 
 # Run scripts
 
