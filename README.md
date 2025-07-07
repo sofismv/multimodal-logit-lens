@@ -1,11 +1,11 @@
-## LLaVA logit lens analysis
+# LLaVA logit lens analysis
 
 Application of logit lens method to multimodal models by analyzing how the language model component of LLaVA handles conflicting information.
 
-# Report analysis
+## Report analysis
 Task solution and full analysis are available [in this file](./report.pdf)
 
-# Setup
+## Setup
 
 Experiments were conducted on NVIDIA A100 (40GB).
 
@@ -20,19 +20,19 @@ Add jupyter kernel and select it when running jupyter notebooks:
 python -m ipykernel install --user --name llava-lens --display-name "llava-lens"
 ```
 
-# Project Structure
-├── src/                      
-│   ├── llava.py                      # Main script
-│   ├── attention_generate_tokens.ipynb # Analyze attention patterns when generating "cat" and "dog" tokens
-│   ├── generate_tokens.ipynb         # Predict tokens during generation
-│   ├── probability.ipynb             # Compute probabilities of "cat" and "dog" tokens
-│   ├── visualize_attention.ipynb     # Visualize attention patterns
-│   └── analysis_results/             # Generated output files (after running scripts)
-├── report.pdf                        # Full analysis report
-├── requirements.txt                  # Python dependencies
-└── README.md                         # This file
+## Project Structure
+├── src/
+│   ├── llava.py                        # Main script
+│   ├── attention_generate_tokens.ipynb # Analyze attention patterns for "cat" and "dog" tokens
+│   ├── generate_tokens.ipynb           # Predict tokens during generation
+│   ├── probability.ipynb               # Compute probabilities of "cat" and "dog" tokens
+│   ├── visualize_attention.ipynb       # Visualize attention patterns
+│   └── analysis_results/               # Generated output files (after running scripts)
+├── report.pdf                          # Full analysis report
+├── requirements.txt                    # Python dependencies
+└── README.md                           # This file
 
-# Run scripts
+## Run scripts
 
 [llava.py](./src/llava.py) - create llava with hooks and compute probabilities for "cat" and "dog" tokens.
 ```bash
